@@ -1,0 +1,21 @@
+---
+title: "data_01"
+format: html
+editor: visual
+---
+
+```{r}
+# 01_explore_data.R
+# Initial exploration of the lung cancer survival dataset
+
+library(survival)
+
+data(lung)
+
+# Structure and summary
+str(lung)
+summary(lung)
+
+# Missing values per variable
+colSums(is.na(lung))
+```
